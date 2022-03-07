@@ -1,12 +1,18 @@
 
+
+import React from 'react';
 import './App.css';
+import ButtonLayout from './Components/ButtonLayout';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
+        header 이다. 굿
       </header>
-    </div>
+      <ButtonLayout />
+    </>
+
   );
 }
 
