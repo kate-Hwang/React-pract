@@ -1,0 +1,105 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .styled-btn-modal{
+    cursor: pointer; 
+    font-size: 50px; 
+    color:#fff; 
+    border: 0;
+    border-radius: 10px; 
+    background-color:#999 ; 
+    padding: 10px 20px; 
+   }
+  .modal button {
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+  }
+  .modal > .Alert-contents-section {
+    width: 100%;
+    max-width: 360px;
+    margin: 30px auto;
+    padding: 10px 0;
+    border-radius: 0.3rem;
+    background-color: rgb(246, 246, 246);
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show 0.3s;
+    overflow: hidden;
+  }
+  /* Total Alert modal */
+  .modal > .Alert-contents-section > header button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    background-color: transparent;
+  }
+  .modal > .Alert-contents-section > main {
+    padding: 20px 0 10px 0;
+  }
+  .alert-modal{
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
+  }
+  .alert-modal p{ font-size: 16px; color: #000; font-weight: 500; }
+  .modal > .Alert-contents-section > .alert-closing-page-btn {
+    padding: 12px 0;
+    max-width: 100%;
+  }
+  .modal > .Alert-contents-section > .alert-closing-page-btn button {
+    padding: 12px 0px;
+    width: 100px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #0078D7;
+    font-size: 15px;
+  }
+  .modal > .Alert-contents-section > .alert-closing-page-btn button:hover{ 
+    color: #fff;
+    background-color: #0063b3;
+   }
+   .modal > .Alert-contents-section > .alert-closing-page-btn button:active{
+    color: #fff;
+    background-color: #0063b3;
+   }
+
+   /* --- */
+  .modal.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show 0.3s;
+  }
+  @keyframes modal-show {
+    from {
+      opacity: 0;
+      margin-top: -50px;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+  @keyframes modal-bg-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

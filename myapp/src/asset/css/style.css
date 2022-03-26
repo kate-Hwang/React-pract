@@ -1,0 +1,14 @@
+
+.Current__Graph__Wrap{ width: 100%; display: flex; }
+
+.graph-cover, .graph-cover-horizontal
+{ width: 800px; height: 500px; border: 1px solid red; text-align: center;}
+
+.graph-cover-horizontal table{
+    width: 800px;
+    
+}
+.graph-cover-horizontal table thead{background-color: #eee;}
+.graph-cover-horizontal table thead tr td{ border: 1px solid gray; }
+.graph-cover-horizontal table tbody tr td{ border: 1px solid gray; }
+.graph-cover-horizontal table tbody tr .graph{ width: 460px; }
