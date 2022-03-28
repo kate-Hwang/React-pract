@@ -1,6 +1,4 @@
 # React-pract
 about myReact-practice
 
-## Styled-Component
-
-## React Props
+원활한 리액트 작업을 위한 공부 및 기능
